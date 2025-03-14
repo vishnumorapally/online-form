@@ -77,7 +77,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8070/api/form/submit", {
+      const response = await fetch("https://online-form-umzt.onrender.com/api/form/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
